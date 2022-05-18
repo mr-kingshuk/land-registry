@@ -10,6 +10,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: #c7c3c3; */
 }
 
 nav .logo{
@@ -65,19 +66,70 @@ nav ul li a:hover, nav ul .active a{
     padding: 10px;
     font-family: sans-serif;
     font-size: 18px;
-    background-color: #eee;
+    background-color: 	#E8E8E8;
 }
 .tabContainer .buttonContainer button:hover{
-    background-color: #d7d4d4;
+    background-color: 	#DCDCDC;
 }
 .tabContainer .tabPanel{
     height: 90%;
     background-color: gray;
-    color: white;
-    text-align: center;
-    padding-top: 105px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 22px;
     display: none;
+}
+
+.tabContainer .tabPanel .text-fields{
+    padding: 25px 0;
+}
+
+.tabContainer .tabPanel .text-fields .field{
+    margin:  25px auto;
+    width: 30%;
+
+}
+
+.tabContainer .tabPanel .text-fields .btn{
+    display: block;
+    margin: 35px auto;
+    /* width: 25%; */
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(48, 48, 150);
+
+}
+
+.tabContainer .tabPanel .text-fields .btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tabContainer .tabPanel .text-fields .view-prop-text{
+    width: fit-content;
+    margin: auto;
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+.tabContainer .tabPanel .text-fields .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tabContainer .tabPanel .text-fields .approve{
+    background-color: green;
+    margin: 0;
+}
+
+.tabContainer .tabPanel .text-fields .reject{
+    background-color: red;
+    margin: 0;
+}
+
+.tabContainer .tabPanel .text-fields .alert{
+    width: fit-content;
+    margin: 30px auto;
+    font-size: 30px;
 }
