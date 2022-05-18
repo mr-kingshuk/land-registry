@@ -1,3 +1,15 @@
+// hamburger
+const hamburger = document.querySelector('.hamburger');
+const innerOptions = document.querySelector('.options');
+
+
+hamburger.addEventListener('click',() =>
+{
+    hamburger.classList.toggle('active-ham');
+    innerOptions.classList.toggle('outside');
+});
+
+// tab switching
 var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
 var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
 

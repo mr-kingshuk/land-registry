@@ -14,73 +14,81 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <a href="./index.html">Land Registry</a>
-        </div>
-        <ul>
-            <li class="active">
-                <a href="./create-property.html"> Create Property</a>
-            </li>
-            <li>
-                <a href="./view-property.html"> View Property</a>
-            </li>
-            <li>
-                <a href="./add-user.html"> Add User</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="tabContainer">
-        <div class="buttonContainer">
-            <button onclick="showPanel(0,'#cfcfcf')">Create Property</button>
-            <button onclick="showPanel(1,'#cfcfcf')">Approve Property</button>
-        </div>
-        <!-- create property -->
-        <div class="tabPanel">
-            <div class="text-fields">
-                <div class="text-field-outlined field">
-                    <input type="text" required=>
-                    <span>Property ID</span>
-                </div>
-                <div class="text-field-outlined field">
-                    <input type="text" required=>
-                    <span>Property Price</span>
-                </div>
-                <div class="text-field-outlined field">
-                    <input type="text" required=>
-                    <span>Property Owner Address</span>
-                </div>
-                <button class="btn">
-                    Create Property
-                </button>
-                <div class="view-prop-text">
-                    or <a href="./view-property.html">View Property</a>
+    <div class="outer">
+
+        <nav>
+            <div class="logo">
+                <a href="./index.html">Land Registry</a>
+            </div>
+            <ul class="options">
+                <li class="active">
+                    <a href="./create-property.html"> Create Property</a>
+                </li>
+                <li>
+                    <a href="./view-property.html"> View Property</a>
+                </li>
+                <li>
+                    <a href="./add-user.html"> Add User</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line l1"></div>
+                <div class="line l2"></div>
+                <div class="line l3"></div>
+            </div>
+        </nav>
+        <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#cfcfcf')">Create Property</button>
+                <button onclick="showPanel(1,'#cfcfcf')">Approve Property</button>
+            </div>
+            <!-- create property -->
+            <div class="tabPanel">
+                <div class="text-fields">
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property ID</span>
+                    </div>
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property Price</span>
+                    </div>
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property Owner Address</span>
+                    </div>
+                    <button class="btn">
+                        Create Property
+                    </button>
+                    <div class="view-prop-text">
+                        or <a href="./view-property.html">View Property</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- approve property -->
-        <div class="tabPanel">
-            <div class="text-fields">
-                <div class="alert">
-                    * Only Super Admin can Approve *
-                </div>
-                <div class="text-field-outlined field">
-                    <input type="text" required=>
-                    <span>Property ID</span>
-                </div>
-                <div class="buttons">
-                    <button class="btn approve">
-                        Approve
-                    </button>
-                    <button class="btn reject">
-                        Reject
-                    </button>
+            <!-- approve property -->
+            <div class="tabPanel">
+                <div class="text-fields">
+                    <div class="alert">
+                        Only Super Admin can Approve 
+                    </div>
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property ID</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn approve">
+                            Approve
+                        </button>
+                        <button class="btn reject">
+                            Reject
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="../Javascript/create-property.js"></script>
+    <script src="../Javascript/script.js"></script>
 </body>
 
 </html>

@@ -13,34 +13,44 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <a href="./index.html">Land Registry</a>
+    <div class="outer">
+        <nav>
+            <div class="logo">
+                <a href="./index.html">Land Registry</a>
+            </div>
+            <ul class=" options">
+                <li>
+                    <a href="./create-property.html"> Create Property</a>
+                </li>
+                <li class="active">
+                    <a href="./view-property.html"> View Property</a>
+                </li>
+                <li>
+                    <a href="./add-user.html"> Add User</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line l1"></div>
+                <div class="line l2"></div>
+                <div class="line l3"></div>
+            </div>
+        </nav>
+        <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#cfcfcf')">View Property</button>
+                <button onclick="showPanel(1,'#cfcfcf')">Change Ownership</button>
+                <button onclick="showPanel(2,'#cfcfcf')">Approve Ownership</button>
+            </div>
+            <!-- view property -->
+            <div class="tabPanel"></div>
+            <!-- change ownership -->
+            <div class="tabPanel"></div>
+            <!-- approve ownership -->
+            <div class="tabPanel"></div>
         </div>
-        <ul>
-            <li>
-                <a href="./create-property.html"> Create Property</a>
-            </li>
-            <li class="active">
-                <a href="./view-property.html"> View Property</a>
-            </li>
-            <li>
-                <a href="./add-user.html"> Add User</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="tabContainer">
-        <div class="buttonContainer">
-            <button onclick="showPanel(0,'#c7c3c3')">View Property</button>
-            <button onclick="showPanel(1,'#c7c3c3')">Change Ownership</button>
-            <button onclick="showPanel(2,'#c7c3c3')">Approve Ownership</button>
-        </div>
-        <div class="tabPanel">View Property</div>
-        <div class="tabPanel">Change Ownership</div>
-        <div class="tabPanel">Approve Ownership</div>
     </div>
 
-    <script src="../Javascript/create-property.js"></script>
+    <script src="../Javascript/script.js"></script>
 </body>
 
 </html>
