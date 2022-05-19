@@ -258,3 +258,23 @@ nav ul li a:hover, nav ul .active a{
     background-color: white;
     text-align: center;
 }
+
+.tabContainer .tabPanel .text-fields .radio-options{
+    width: fit-content;
+    margin: auto;
+}
+
+.tabContainer .tabPanel .text-fields .radio-options h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: blue;
+    margin-bottom: 18px;
+
+}
+
+.tabContainer .tabPanel .text-fields .radio-options .options{
+    display: block;
+   margin: 5px ;
+   font-size: 20px;
+}
