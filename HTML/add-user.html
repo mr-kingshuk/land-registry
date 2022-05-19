@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Land Registry | Add User</title>
     <link rel="stylesheet" href="../CSS/create-property.css">
+    <link rel="stylesheet" href="../CSS/text-box.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -40,8 +41,39 @@
                 <button onclick="showPanel(0,'#cfcfcf')">Add User</button>
                 <button onclick="showPanel(1,'#cfcfcf')">Approve User</button>
             </div>
-            <div class="tabPanel">Add User</div>
-            <div class="tabPanel">Approve User</div>
+            <!-- add user -->
+            <div class="tabPanel">
+                <div class="text-fields">
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>User Address</span>
+                    </div>
+                    
+                    <button class="btn">
+                        Create User
+                    </button>
+                </div>
+            </div>
+            <!-- approve user -->
+            <div class="tabPanel">
+                <div class="text-fields">
+                    <div class="alert">
+                        Only Super Admin can Approve 
+                    </div>
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property ID</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn approve">
+                            Approve
+                        </button>
+                        <button class="btn reject">
+                            Reject
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

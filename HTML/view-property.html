@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Land Registry | View Property</title>
     <link rel="stylesheet" href="../CSS/create-property.css">
+    <link rel="stylesheet" href="../CSS/text-box.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -42,11 +43,56 @@
                 <button onclick="showPanel(2,'#cfcfcf')">Approve Ownership</button>
             </div>
             <!-- view property -->
-            <div class="tabPanel"></div>
+            <div class="tabPanel">
+                <div class="text-fields">
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property ID</span>
+                    </div>
+                    <button class="btn">
+                        Search
+                    </button>
+                </div>
+            </div>
             <!-- change ownership -->
-            <div class="tabPanel"></div>
+            <div class="tabPanel">
+                <div class="text-fields">
+                    <div class="alert long">
+                        Only Current Owner can Change Ownership   
+                    </div>
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property ID</span>
+                    </div>
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>New Owner Address</span>
+                    </div>
+                    <button class="btn">
+                        Request for Change
+                    </button>
+                </div>
+            </div>
             <!-- approve ownership -->
-            <div class="tabPanel"></div>
+            <div class="tabPanel">
+                <div class="text-fields">
+                    <div class="alert">
+                        Only Super Admin can Approve 
+                    </div>
+                    <div class="text-field-outlined field">
+                        <input type="text" required=>
+                        <span>Property ID</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn approve">
+                            Approve
+                        </button>
+                        <button class="btn reject">
+                            Reject
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
