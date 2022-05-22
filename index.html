@@ -11,6 +11,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .outer nav {
+            z-index: 1000;
+        }
+
+        @media screen and (min-width: 950px) {
+            .outer nav .options {
+                background-color: transparent;
+            }
+        }
+
+        .main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            height: 100vh;
+            background-image: url("Images/landing-page.jpg");
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 85%;
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 60px;
+            font-weight: 500;
+            color: white;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+            text-align: center;
+            /* border: 2px solid black; */
+        }
+
+        @media screen and (max-width: 450px) {
+            .main .text {
+                min-width:95%;
+                font-size: 50px;
+            }
+        }        
+    </style>
 </head>
 
 <body>
@@ -36,6 +86,9 @@
                 <div class="line l3"></div>
             </div>
         </nav>
+        <div class="main">
+            <div class="text">A Secure Land Regitration :)</div>
+        </div>
     </div>
 
     <script src="../Javascript/script.js"></script>
